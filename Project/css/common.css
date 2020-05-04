@@ -1,0 +1,423 @@
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/* Get icon from icomoon.io; To add more ico by import previous and select new
+/* and then generate new ico file */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?7kkyc2');
+    src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+    url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+    url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+  	font-weight: normal;
+  	font-style: normal;
+}
+.fr .icomoon {
+	font-family: 'icomoon';
+	font-size: 16px;
+	line-height: 26px;
+}
+
+/* edition area */
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+.style-red {
+	color: #c81623;
+}
+.spacer {
+	width: 1px;
+	height: 12px;
+	color: #666;
+	margin: 0 12px;
+}
+
+/* Top shortcut navigator */
+.shortcut {
+	height: 31px;
+	background-color: #f1f1f1;
+	line-height: 31px;
+}
+.shortcut li {
+	float: left;
+}
+
+/* header */
+.header {
+	position: relative;
+	height: 105px;
+	background-color: #fff;
+}
+.logo {
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	width: 60px;
+	height: 60px;
+	/*background-color: #fff;*/
+}
+.logo a {
+	display: block;
+	/*overflow: hidden;*/
+	width: 60px;
+	height: 60px;
+	background: url(../img/logo.png) no-repeat;
+	/*text-indent: 0;*/
+	font-size: 0;
+
+}
+
+.search	{
+	position: absolute;
+	top: 25px;
+	left: 348px;
+}
+.text {
+	float: left;
+	width: 445px;
+	height: 32px;
+	border: 2px solid #b1191a;
+	padding-left: 10px;
+	color: #ccc;
+}
+.bnt {
+	float: left;
+	width: 82px;
+	height: 36px;
+	background-color: #b1191a;
+	border: none;
+	font-size: #fff;
+}
+.hotwords	{
+	position: absolute;
+	top: 65px;
+	left: 348px;
+}
+.hotwords a {
+	margin: 0 16px;
+}
+.shoppingcart {
+	position: absolute;
+	top:25px;
+	right: 64px;
+	width: 100px;
+	height: 36px;
+	border: 1px solid #dfdfdf;
+	background-color: #f7f7f7;
+	line-height: 36px;
+	text-align: center;
+}
+.cart {
+	font-family: 'icomoon';
+	color: #da5555;
+	margin-right: 5px;
+}
+.arrow {
+	font-family: 'icomoon';
+	margin-left: 5px;
+}
+.count {
+	position: absolute;
+	top: -5px;
+	left: 70px;
+	height: 14px;
+	padding: 0 3px;
+	line-height: 14px;
+	background-color: #e60012;
+	color: #fff;
+	border-radius: 7px 7px 7px 0;
+}
+
+.corona {
+	height: 60px;
+	background-color: #f5f5f5;	
+	text-align: center;
+}
+.corona h3 {
+	font-size: 14px;
+	line-height: 24px;
+	padding-top: 10px;
+}
+.corona a {
+	font-size: 12px;
+	line-height: 20px;
+}
+/*
+.dropdown {
+	width: 209px;
+	height: 35px;
+	background-color: red;
+
+}
+*/
+
+/*nav start*/
+.nav {
+	height: 45px;
+	border-bottom: 2px solid #b1191a;
+}
+.mainmenu {
+	width: 209px;
+	height: 45px;
+}
+.mainmenu .dt {
+	height: 100%;
+	background-color: #b1191a;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	line-height: 45px;
+}
+.mainmenu .dd {
+	height: 465px;
+	background-color: #c81623;
+	margin-top: 2px;
+} 
+.menu_item {
+	transition: all 0.5s;
+}
+.menu_item:hover {
+	background-color: #fff;
+	padding-left: 20px;
+}
+.menu_item:hover a {
+	color: #c81623;
+}
+.menu_item {
+	height: 27px;
+	line-height: 27px;
+	margin-left: 1px;
+	padding: 0 10px;
+	transition: all .5s;
+}
+.menu_item a {
+	font-size: 12px;
+	color: #fff;
+}
+.menu_item i {
+	float: right;
+	font-family: 'icomoon';
+	font-size: 18px;
+	color: #fff;
+}
+.navitems {
+	margin-left: 10px;
+}
+.navitems li {
+	float: left;	
+	
+}
+.navitems li a {
+	display: block;
+	height: 45px;
+	padding: 0 25px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 14px;
+}
+.footer {
+	height: 435px;
+	background-color: #f5f5f5;
+	padding-top: 30px;
+}
+.mod_signup_links {
+	height: 45px;
+	padding-bottom: 25px; 
+}
+.email_signup {
+	margin-left: 20px;
+}
+.social_links {
+	/*position: absolute;*/
+	float: right;
+	font-size: 20px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 15px;
+	/*margin-right: 14px;*/
+}
+.social_links a {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	
+}
+.social_links a:hover {
+	color: #c81623;
+	border-radius: 100%;
+}
+.round {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+}
+.facebook {
+	font-family: 'icomoon';
+	color: #fff;
+	padding: 10px;
+	background-color: blue;
+	margin-right: 25px;
+}
+.twitter {
+	font-family: 'icomoon';
+	color: #fff;
+	padding: 10px;
+	background-color: skyblue;
+	margin-right: 25px;
+}
+.pinterest {
+	font-family: 'icomoon';
+	color: #000;
+	padding: 10px;
+	background-color: darkred;
+	margin-right: 25px;
+}
+.youtube {
+	font-family: 'icomoon';
+	color: #000;
+	padding: 10px;
+	background-color: red;
+	margin-right: 25px;
+}
+.bg-default-50 {
+    background-color: #fff!important;
+}
+
+.module_service {
+	height: 79px;
+	background-color: #f5f5f5;
+}
+.module_service li {
+	float: left;
+	width: 300px;
+	height: 79px;
+}
+.mod_service {
+	height: 79px;
+	border-bottom: 1px solid #ccc;
+}
+
+.mod_service li {
+	float: left;
+	width: 240px;
+	height: 79px;
+
+}
+.mod_service_icon {
+	float: left;
+	width: 55px;
+	height: 50px;
+	margin-left: 35px;
+	background: url(../img/icons.png) no-repeat;
+}
+.mod_service_fast {
+	background-position: -255px -54px;
+}
+
+.mod_service_title {
+	float: left;
+	margin-left: 5px;
+}
+.mod_service_title h5 {
+	margin: 5px 0;
+}
+.mod_service_return {
+	background-position: -257px -105px;
+}
+.mod_service_personal {
+	background-position: -257px -156px;
+}
+.mod_service_help {
+	background-position: -255px -208px;
+}
+
+.mod_help {
+	height: 210px;
+	border-bottom: 1px solid #ccc;
+}
+.mod_help_item {
+	float: left;
+	width: 250px;
+	padding: 20px 0 0 50px;
+}
+.mod_help_item dt {
+	height: 25px;
+	font-size: 16px;
+}
+.mod_help_item dd {
+	height: 22px;
+}
+.mod_help_app dt,
+.mod_help_app p {
+	padding-left: 15px;
+}
+.mod_help_app img {
+	margin: 7px 0;
+	padding-left: 15px;
+}
+.mod_copyright {
+	text-align: left;
+}
+.mod_copyright_links {
+	margin: 20px 0 15px 0;
+}
+.mod_copyright_info {
+	line-height: 18px;
+}
+.footer .legal {
+	padding-top: 0.625rem;
+}
+.mod_copyright {
+	text-align: center;
+}
+.mod_copyright_info {
+	line-height: 18px;
+}
+.mod_copyright_info a {
+	color: #000;
+}
+.mod_copyright_info a:hover {
+	color: #;
+	text-decoration: underline;
+}
+
+.legal {
+	color: #c81623;
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

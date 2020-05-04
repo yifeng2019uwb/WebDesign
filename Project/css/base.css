@@ -1,0 +1,64 @@
+/* clear the default margins & padding */
+* {
+	margin: 0;
+	padding: 0;
+}
+/* set all font be normal */
+em,
+i {
+	font-style: normal;
+}
+/* remove the mark/bullet of list */
+li {
+	list-style: none;
+}
+/* remove the crevice of images */
+img {
+	border: 0;
+	vertical-align: middle;
+}
+/* let button become pointer when mouse is on the button */
+button {
+	cursor: pointer;
+}
+/* remove the default underline of a/href */
+a {
+	color: #666;
+	text-decoration: none;
+}
+a:hover {
+	color: #e33333;
+}
+button,
+input {
+	font-family: -apple-system,BlinkMacSystemFont,Roboto,Segoe UI,system-ui,Helvetica Neue,Ubuntu,sans-serif;
+	outline: none;
+}
+body {
+	background-color: #fff;
+	font: 12px/1.5 -apple-system,BlinkMacSystemFont,Roboto,Segoe UI,system-ui,Helvetica Neue,Ubuntu,sans-serif;
+	color: #1d1e1f;
+}
+
+.hide,
+.none {
+	display: none;
+}
+
+/* remove floating */
+.clearfix:after {
+	visibility: hidden;
+	clear: both;
+	display: block;
+	content: ".";
+	height: 0;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+
+
+
+
+
