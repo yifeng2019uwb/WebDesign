@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            width: 600px;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        
+        td,
+        th {
+            border: 1px solid #000;
+            text-align: center;
+        }
+        
+        input {
+            width: 50px;
+        }
+        
+        .search {
+            width: 600px;
+            margin: 20px auto;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="search">
+        Search by Price: <input type="text" class="price-start"> - <input type="text" class="price-end">
+        <button class="search-price">Search</button> Search by Product Name: <input type="text" class="pname">
+        <button class="search-name">Search</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Product Name</th>
+                <th>Price($)</th>
+            </tr>
+
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+        var data = [{
+            id: 1,
+            pname: 'google - pixel4',
+            price: 799
+        }, {
+            id: 2,
+            pname: 'iphone 7',
+            price: 699
+        }, {
+            id: 3,
+            pname: 'iphone 8',
+            price: 799
+        }, {
+            id: 4,
+            pname: 'iphone 9',
+            price: 899
+        }, {
+            id: 5,
+            pname: 'samsung - galaxy',
+            price: 999
+        }, ];
+        console.log(data);
+
+        var tbody = document.querySelector('tbody');
+        var search_price = document.querySelector('.search-price');
+        var price_start = document.querySelector('.price-start');
+        var price_end = document.querySelector('.price-end');
+        var search_name = document.querySelector('.search-name');
+        var pname = document.querySelector('.pname');
+
+        addData(data);
+
+        function addData(mydata) {
+            // clear table body first
+            tbody.innerHTML = '';
+            mydata.forEach(function(element) {
+                var tr = document.createElement('tr');
+                tr.innerHTML = '<td>' + element.id + '</td>' +
+                    '<td>' + element.pname + '</td>' +
+                    '<td>' + element.price + '</td>';
+                tbody.appendChild(tr);
+            });
+
+            search_price.addEventListener('click', function() {
+                var newData = data.filter(function(value) {
+                    return value.price >= price_start.value && value.price <= price_end.value;
+                })
+                console.log(newData);
+                addData(newData);
+            })
+
+            search_name.addEventListener('click', function() {
+                // var newData = data.filter(function(value) {
+                //     console.log(value.pname);
+                //     console.log(pname.value);
+                //     return value.pname == pname.value;
+                // })
+                // var newData = [];
+                // data.some(function(value) {
+                //     if (value.pname === pname.value) {
+                //         newData.push(value);
+                //         return true;
+                //     }
+                // })
+
+                var newData = data.filter(function(value) {
+                    console.log(value.pname);
+                    console.log(pname.value);
+                    console.log(value.pname.includes(pname.value));
+                    return value.pname.includes(pname.value);
+                })
+                console.log(newData);
+                addData(newData);
+            })
+
+        }
+    </script>
+
+</body>
+
+</html>
