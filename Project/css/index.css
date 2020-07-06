@@ -136,7 +136,7 @@
 
 .lifeservice li a {
     display: block;
-    /* overflow: hidden; 解决i 引起的 外边距塌陷合并的问题*/
+    /* overflow: hidden; */
     overflow: hidden;
     height: 100%;
 }

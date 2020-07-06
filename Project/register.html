@@ -1,109 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Register</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<!-- link to base.css<initial css file> & common.css -->
-	<link rel="stylesheet" href="css/base.css">
-	<!-- link to common.css -->
-	<link rel="stylesheet" href="css/register.css">
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- link to base.css<initial css file> & common.css -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- link to common.css -->
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/reg.js"></script>
 
 </head>
 
 <body>
-	<div class="w">
-		<!-- header -->
-		<div class="header">
-			<div class="logo">
-				<a href="index.html"><img src="img/logo.png"></a>
-			</div>
-		</div>
+    <div class="w">
+        <!-- header -->
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png"></a>
+            </div>
+        </div>
 
-			<!-- register area -->
-		<div class="register_area">
-			<h3>Create new Account
-				<em>I already have an account <a href="login.html">Log in </a></em>
-			</h3>
+        <!-- register area -->
+        <div class="register_area">
+            <h3>Create new Account
+                <em>I already have an account <a href="login.html">Log in </a></em>
+            </h3>
 
-			<div class="register_form">
+            <div class="register_form">
 
-				<form action="demo.php">
-					<ul>
-						<li>
-							<label for="email">Email:</label>
-							<input type="text" class="inp" id="email">
-							<span class="error">		
-								<i class="error_icon"></i>
-								Error, please input again
-							</span>
-						</li>
-						<li>
-							<label for="">PIN code:</label>
-							<input type="text" class="inp">
-						
-						</li>
-						<li>
-							<label for="">password:</label>
-							<input type="text" class="inp">
-							<span class="success">		
-								<i class="success_icon"></i>
-							Sucessed
-							</span>
-						</li>
-						<li class="safe">
-							Security 
-							<em class="low">low</em>
-							<em class="mid">middle</em>
-							<em class="high">high</em>	
-						</li>
+                <form action="demo.php">
+                    <ul>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="text" class="inp" id="email">
+                            <span class="">	</span>
+                        </li>
+                        <li>
+                            <label for="">PIN code:</label>
+                            <input type="text" class="inp" id="pin">
+                            <span class="">	</span>
+                        </li>
+                        <li>
+                            <label for="">password:</label>
+                            <input type="text" class="inp" id='pwd'>
+                            <span class="">	</span>
+                        </li>
+                        <li class="safe">
+                            Security
+                            <em class="low">low</em>
+                            <em class="mid">middle</em>
+                            <em class="high">high</em>
+                        </li>
 
-						<li>
-							<label for="">confirm password:</label>
-							<input type="text" class="inp">
-							<span class="success" >		
-								<i class="success_icon"></i>
-								Correct 
-							</span>
-						</li>
-						<li class="agree">  
-	
-						  <input type="checkbox" > I agree
-						  <a href="#"> Happy Shopping Contract</a>
-						</li>
-						<li>
-							<input type="submit" value="Submit" class="reg_submit">
-						</li>
-					</ul>
-				</form>
-				
-			</div>
-		</div>	
+                        <li>
+                            <label for="">confirm password:</label>
+                            <input type="text" class="inp" id="cpwd">
+                            <span class="">	</span>
+                        </li>
+                        <li class="agree">
 
-		<!--copy right  -->
-		<div class="mod_copyright">
-				<p class="mod_copyright_links">					
-				</p>
-				<p class="mod_copyright_info">
-					© 2020 macys.com is a registered trademark. All rights reserved. HappyShopping.com, LLC, 8000 Happy Shooping Street. Seattle, WA 90000 M PO Box 10000, Seattle, WA 90000. Request our <a href="#">corporate name & address </a>by email.
-				</p>
-			</div>
-			<div class="legal">
-				<a href="#">Privacy Notice |</a>
-				<a href="#">Don't Sell My Info |</a>
-				<a href="#">Interest Based Ads  |</a>
-				<a href="#">CA Privacy Rights  |</a>
-				<a href="#">Legal Notice  |</a>
-				<a href="#">Customer Bill of Rights  |</a>
-				<a href="#">Product Recalls  |</a>
-				<a href="#">Price Policy |</a>
-				<a href="#">Site Map  </a>
+                            <input type="checkbox"> I agree
+                            <a href="#"> Happy Shopping Contract</a>
+                        </li>
+                        <li>
+                            <input type="submit" value="Submit" class="reg_submit">
+                        </li>
+                    </ul>
+                </form>
 
-			</div>	
+            </div>
+        </div>
 
-	</div>
+        <!--copy right  -->
+        <div class="mod_copyright">
+            <p class="mod_copyright_links">
+            </p>
+            <p class="mod_copyright_info">
+                © 2020 macys.com is a registered trademark. All rights reserved. HappyShopping.com, LLC, 8000 Happy Shooping Street. Seattle, WA 90000 M PO Box 10000, Seattle, WA 90000. Request our <a href="#">corporate name & address </a>by email.
+            </p>
+        </div>
+        <div class="legal">
+            <a href="#">Privacy Notice |</a>
+            <a href="#">Don't Sell My Info |</a>
+            <a href="#">Interest Based Ads  |</a>
+            <a href="#">CA Privacy Rights  |</a>
+            <a href="#">Legal Notice  |</a>
+            <a href="#">Customer Bill of Rights  |</a>
+            <a href="#">Product Recalls  |</a>
+            <a href="#">Price Policy |</a>
+            <a href="#">Site Map  </a>
+
+        </div>
+
+    </div>
 
 
 
 </body>
+
 </html>
