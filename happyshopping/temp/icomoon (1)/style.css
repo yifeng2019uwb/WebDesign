@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?tbxv0d');
+  src:  url('fonts/icomoon.eot?tbxv0d#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?tbxv0d') format('truetype'),
+    url('fonts/icomoon.woff?tbxv0d') format('woff'),
+    url('fonts/icomoon.svg?tbxv0d#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home3:before {
+  content: "\e902";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-location2:before {
+  content: "\e948";
+}
+.icon-zoom-in:before {
+  content: "\e987";
+}
+.icon-zoom-out:before {
+  content: "\e988";
+}
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-minus:before {
+  content: "\ea0b";
+}
+.icon-cancel-circle:before {
+  content: "\ea0d";
+}
+.icon-play3:before {
+  content: "\ea1c";
+}
+.icon-images:before {
+  content: "\e90e";
+}
+.icon-play:before {
+  content: "\e912";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-gift:before {
+  content: "\e99f";
+}
+.icon-list2:before {
+  content: "\e9bb";
+}
+.icon-ctrl:before {
+  content: "\ea50";
+}
+.icon-ctrl1:before {
+  content: "\ea51";
+}
+.icon-amazon:before {
+  content: "\ea87";
+}
+.icon-google:before {
+  content: "\ea88";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube2:before {
+  content: "\ea9e";
+}
+.icon-appleinc:before {
+  content: "\eabe";
+}
+.icon-pinterest:before {
+  content: "\ead1";
+}
+.icon-barcode:before {
+  content: "\e937";
+}
+.icon-list:before {
+  content: "\e9ba";
+}
+.icon-question:before {
+  content: "\ea09";
+}
